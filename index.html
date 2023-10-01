@@ -9,10 +9,10 @@
     <!-- Font Awesome 5 -->
     <script src="https://kit.fontawesome.com/8a2fbc0c4d.js" crossorigin="anonymous"></script>
 
-    <!-- Montserrat Alternates --> <!-- Thin 100/Regular 400/Bold 700 -->
+    <!-- Montserrat Alternates --> <!-- Thin 100/Regular 400/Bold 700/Medium 500 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;400;500;700&display=swap" rel="stylesheet">
 
     <!-- Orbitron  --> <!-- Regular 400 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,6 +22,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/index/index.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
 
     <title>SportPit</title>
 </head>
@@ -33,11 +34,9 @@
             <p class="header-logo__site-description">Интернет-магазин<br> спортивного питания</p>
         </div>
         <div class="header-menu">
-            <div class="header-menu__search">
-                <form action="">
-                    <input type="text" name="" id="header-menu__search" placeholder="Поиск...">
-                </form>
-            </div>
+            <form action="" class="header-menu__search">
+                <input type="text" name="" id="header-menu__search" placeholder="Поиск...">
+            </form>
             <ul>
                 <li class="header-menu__item"><a href="">Войти</a></li>
                 <li class="header-menu__item"><a href="">Избранное</a></li>
@@ -47,9 +46,136 @@
                 <li class="header-menu__item"><a href="">Поддержка</a></li>
             </ul>
         </div>
+        <div class="header-menu-mobile">
+            <ul>
+                <li class="header-menu__item"><a href="">Войти</a></li>
+                <li class="header-menu__item"><a href="">Избранное</a></li>
+                <li class="header-menu__item"><a href="">Бренды</a></li>
+                <li class="header-menu__item"><a href="">Каталог</a></li>
+                <li class="header-menu__item"><a href="">Корзина</a></li>
+                <li class="header-menu__item"><a href="">Поддержка</a></li>
+            </ul>
+        </div>
+        <div class="header-menu-mobile__icon">
+            <div class="header-menu-mobile__icon-item"></div>
+            <div class="header-menu-mobile__icon-item"></div>
+            <div class="header-menu-mobile__icon-item"></div>
+        </div>
     </header>
 
-    <script src="assets/js/index/main.js"></script>
+    <main>
+        <div class="site-info">
+            <div class="site-info__item">
+                <p>
+                    Наш магазин работает уже более 150 лет. Со времен правления
+                    Наполеона во всем мире. Он славится тем, что продает спортивное
+                    питания нуждающимся детям в Африке по низким ценам, а так же велосипеды.
+                    Ознакомиться со всеми нашими товарами вы можете по кнопке ниже.
+                    И вообще мы
+                    лучшие в своём деле.
+                </p>
+                <a href="">Каталог товаров</a>
+            </div>
+            <div class="site-info__item">
+                <p>
+                    На нашем сайте собраны межгалактические бренды спортивного питания.
+                    Они поставляют товары, которми пользуются в том числе и иные рассы
+                    разумной жизни, место обитания которых ученые ещё даже не нашли.
+                </p>
+                <a href="">Бренды</a>
+            </div>
+            <div class="site-info__item">
+                <p>
+                    Тут еще какой нибудь блок с кнопкой.
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                    doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                    veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                </p>
+                <a href="">Кнопка</a>
+            </div>
+        </div>
+
+        <div class="recomendation">
+            <h2>Рекомендуем ознакомиться:</h2>
+            <div class="recomendation__item">
+                <div class="recomendation__item-img">
+                    <img src="assets/img/index/proteine.png" alt="Proteine Whey">
+                </div>
+                <div class="recomendation__item-description">
+                    <p>Протеин<br><span id="recomendation__item-product-name">WHEY</span></p>
+                    <p>Тут что-то про этот продукт и какой он крутой
+                        и вообще лучший в своей ценовой категории, а так же по качеству.</p>
+                    <a href="">Купить за 5000₽</a>
+                </div>
+            </div>
+            <div class="recomendation__item">
+                <div class="recomendation__item-description">
+                    <p>Креатин<br><span id="recomendation__item-product-name">BioTech</span></p>
+                    <p>Тут что-то про этот продукт и какой он крутой
+                        и вообще лучший в своей ценовой категории, а так же по качеству.</p>
+                    <a href="">Купить за 12000₽</a>
+                </div>
+                <div class="recomendation__item-img">
+                    <img src="assets/img/index/creatine.png" alt="Creatine BioTech">
+                </div>
+            </div>
+            <div class="recomendation__item">
+                <div class="recomendation__item-img">
+                    <img src="assets/img/index/geiner.png" alt="Geiner Mutant">
+                </div>
+                <div class="recomendation__item-description">
+                    <p>Гейнер<br><span id="recomendation__item-product-name">MUTANT</span></p>
+                    <p>Тут что-то про этот продукт и какой он крутой
+                        и вообще лучший в своей ценовой категории, а так же по качеству.</p>
+                    <a href="">Купить за 13₽</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="consultation">
+            <h2>Также вы можете заказать у нас <span id="consultation-header__red-item">бесплатную</span> консультацию!</h2>
+            <p>Мы обязательно с вами свяжемся!</p>
+            <form action="" class="consultation__form">
+                <input type="text" name="" id="" placeholder="Как к вам обращаться?">
+                <input type="tel" name="" id="" placeholder="Ваш номер телефона">
+                <button>Отправить</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-menu">
+            <div class="footer-menu__item">
+                <ul>
+                    <p>Контакты:</p>
+                    <li>8 (989) 182-14-27</li>
+                    <li>г.Йошкар-Ола<br>ул.Дзержинская 18</li>
+                    <li>info@sportpit.net</li>
+                </ul>
+            </div>
+            <div class="footer-menu__item">
+                <ul>
+                    <p>Комания:</p>
+                    <li>О компании</li>
+                    <li>Отзывы</li>
+                    <li>Сатьи</li>
+                    <li>Магазины</li>
+                </ul>
+            </div>
+            <div class="footer-menu__item">
+                <ul>
+                    <p>Покупателям:</p>
+                    <li>Доставка</li>
+                    <li>Оплата</li>
+                    <li>Обратная связь</li>
+                    <li>Возврат товара</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <p id="signature">Designed & Created by Brahma</p>
+
+    <script src="assets/js/index/header.js"></script>
 </body>
 
 </html>
