@@ -275,6 +275,26 @@ header {
     top: 5%;
 }
 
+.scroll-to-top__button {
+    position: fixed;
+    left: 90%;
+    top: 80%;
+    padding: 10px 15px;
+    border-radius: 100%;
+    font-size: 24px;
+    background-color: aliceblue;
+    color: black;
+    box-shadow:  0px 0px 5px black;
+    display: none;
+    opacity: 0;
+    transition: .3s ease opacity;
+}
+
+.scroll-to-top__button-active {
+    opacity: 100;
+    display: block;
+}
+
 @media (max-width: 1385px) {
     .header-logo {
         flex-direction: column;

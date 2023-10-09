@@ -1,4 +1,5 @@
 footer {
+    position: absolute;
     padding: 40px 140px;
 }
 
@@ -12,6 +13,10 @@ footer {
     margin-top: 15px;
     font-size: 16px;
     font-weight: 400;
+}
+
+.footer-menu__item ul li a{
+    color: black;
 }
 
 .footer-menu__item p {
