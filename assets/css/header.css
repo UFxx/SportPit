@@ -45,6 +45,8 @@ header {
     font-size: 32px;
     font-family: 'Orbitron', sans-serif;
     color: #E5E5E5;
+    cursor: pointer;
+
     transition: .3s ease color;
 }
 
@@ -251,6 +253,17 @@ header {
 
     transition: .3s ease transform,
         .3s ease background-color;
+
+        background-color: transparent;
+        border-radius: 5px;
+        outline: none;
+        border: 2px solid #797878;
+        font-size: 18px;
+        margin-top: 20px;
+        color: #727272;
+        box-shadow: 0px 0px 5px #727272;
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-weight: 500;
 }
 
 .login form button:hover {

@@ -46,3 +46,8 @@ window.addEventListener('load', () => {
     headerLogo.style.color = `${colors[randomColorNumber]}`;
     headerLogoIcon.classList.add(`${icons[randomIconNumber]}`);
 })
+
+// Go to the main page by clicking on the logo
+headerLogo.addEventListener('click', () => {
+    window.location.href = './index.html'
+});

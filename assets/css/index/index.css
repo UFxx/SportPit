@@ -77,6 +77,11 @@
 .recomendation__item {
     margin-top: 40px;
     display: flex;
+    transform: translateY(100px);
+    opacity: 0;
+
+    transition: .3s ease transform,
+                    .3s ease opacity;
 }
 
 .recomendation__item img {
@@ -187,6 +192,10 @@ button {
     box-shadow: none;
 }
 
+.consultation__form input:focus {
+    background-color: #bebebe;
+    box-shadow: none;
+}
 .consultation__form input::placeholder {
     transition: .3s ease transform;
 }
