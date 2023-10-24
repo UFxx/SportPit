@@ -1,3 +1,4 @@
+// FOR HEADER
 const headerMenuMobile = document.querySelector('.header-menu-mobile');
 const headerMenuMobileIcon = document.querySelector('.header-menu-mobile__icon');
 const headerMenuMobileBars = document.querySelectorAll('.header-menu-mobile__icon-item');
@@ -51,3 +52,38 @@ window.addEventListener('load', () => {
 headerLogo.addEventListener('click', () => {
     window.location.href = './index.html'
 });
+
+// HEADER LOGIN
+const login = document.querySelector('.login');
+const loginButtons = document.querySelectorAll('.header-menu ul li:first-of-type a, .header-menu-mobile ul li:first-of-type a');
+const closeLogin = document.querySelector('.fa-times');
+const body = document.querySelector('body');
+
+loginButtons.forEach(element => {
+    element.addEventListener('click', () => {
+        login.style.display = 'flex';
+        body.style.overflowY = 'hidden';
+        setTimeout(() => {
+            login.style.left = 0;
+        }, 0);
+    })
+});
+
+closeLogin.addEventListener('click', () => {
+    login.style.left = '100%';
+    body.style.overflowY = 'scroll';
+    setTimeout(() => {
+        login.style.display = 'none'; 
+    }, 300);
+});
+
+// SCROLL TO TOP
+const scrollToTopButton = document.querySelector('.scroll-to-top__button');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+        scrollToTopButton.classList.add('scroll-to-top__button-active');
+    } else {
+        scrollToTopButton.classList.remove('scroll-to-top__button-active');
+    }
+})
