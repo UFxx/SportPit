@@ -100,13 +100,84 @@
                     <div class="product-general-info">
                         <input class="product-general-info__name" type="text" placeholder="Название товара">
                         <input class="product-general-info__price" type="text" placeholder="Цена">
-                        <button>Выбрать фото</button>
+                        <input type="file" id="file-input"/>
+                        <label for="file-input" id="file-input__label">Фото не выбрано</label>
                     </div>
                     <textarea name="" id="" cols="30" rows="10" placeholder="Описание товара"></textarea>
                 </form>
             </div>
+            <div class="product-preview">
+                <h3>Предпросмотр:</h3>
+                <div class="items__container">
+                    <div class="item">
+                        <img src="assets/img/brand-profile/products/Mega Amino.png" alt="">
+                        <div class="item-info">
+                            <p>Mega Amino<br>MUTANT</p>
+                            <p><span>1500</span>₽</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="product-preview__buttons" action="">
+                    <button>Сохранить</button>
+                    <button>Опубликовать</button>
+                </form>
+            </div>
+
+            <div class="saved-items">
+                <h3>Сохраненные товары:</h3>
+                <div class="items__container">
+                    <div class="item">
+                        <img src="assets/img/brand-profile/products/Mega Amino.png" alt="">
+                        <div class="item-info">
+                            <p>Mega Amino<br>MUTANT</p>
+                            <p><span>1500</span>₽</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
+
+        <footer>
+            <div class="footer-menu">
+                <div class="footer-menu__item">
+                    <ul>
+                        <p>Контакты:</p>
+                        <li>8 (989) 182-14-27</li>
+                        <li>г.Йошкар-Ола<br>ул.Дзержинская 18</li>
+                        <li>info@sportpit.net</li>
+                    </ul>
+                </div>
+                <div class="footer-menu__item">
+                    <ul>
+                        <p>Компания:</p>
+                        <li><a href="">О компании</a></li>
+                        <li><a href="">Отзывы</a></li>
+                        <li><a href="">Сатьи</a></li>
+                        <li><a href="">Магазины</a></li>
+                    </ul>
+                </div>
+                <div class="footer-menu__item">
+                    <ul>
+                        <p>Покупателям:</p>
+                        <li><a href="">Доставка</a></li>
+                        <li><a href="">Оплата</a></li>
+                        <li><a href="">Обратная связь</a></li>
+                        <li><a href="">Возврат товара</a></li>
+                    </ul>
+                </div>
+                <div class="footer-menu__item">
+                    <ul>
+                        <p>Сотрудничество:</p>
+                        <li><a href="">Брендам</a></li>
+                        <li><a href="">Поставщикам</a></li>
+                        <li><a href="">Реклама</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <p id="signature">Designed & Created by Brahma</p>
     
         <script src="assets/js/main.js"></script>
+        <script src="assets/js/brand-profile/previewProduct.js"></script>
 </body>
 </html>
