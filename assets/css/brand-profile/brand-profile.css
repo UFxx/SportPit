@@ -6,6 +6,16 @@ main {
     padding: 40px 70px;
 }
 
+button {
+    box-shadow: 0 0 3px black;
+    outline: none;
+    background: transparent;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.5);
+}
+
 .brand-info {
     position: relative;
     display: flex;
@@ -33,11 +43,11 @@ main {
     padding: 2px 23px;
     color: #727272;
     cursor: pointer;
+    box-shadow: 0 0 3px black;
     transition: .3s ease color,
         .3s ease background-color,
         .3s ease transform,
         .3s ease box-shadow;
-    box-shadow: 0 0 3px black;
 }
 
 .brand-avatar button:hover {
@@ -78,6 +88,30 @@ main {
     font-size: 24px;
 }
 
+.add-product button {
+    margin-top: 20px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border: 2px solid rgba(0, 0, 0, 0.50);
+    background: #FFF;
+    box-shadow: 0px 0px 5px 0px #0000007b;
+    font-size: 18px;
+    padding: 5px 20px;
+    border-radius: 5px;
+
+    transition: .3s ease transform,
+                    .3s ease box-shadow,
+                    .3s ease background-color;
+}
+
+.add-product button:hover {
+    transform: translateY(5px);
+    box-shadow: none;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
 .product-general-info {
     margin-top: 30px;
     display: flex;
@@ -110,11 +144,11 @@ main {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
-.product-general-info input::placeholder {
+.product-general-info input::placeholder, .add-product textarea::placeholder {
     transition: .3s ease transform;
 }
 
-.product-general-info input:focus::placeholder {
+.product-general-info input:focus::placeholder, .add-product textarea:focus::placeholder {
     transform: translateY(-110%);
 }
 
@@ -171,6 +205,9 @@ input[type="file"] + label {
 
 .items__container {
     margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 30px;
 }
 
 .item {
@@ -191,7 +228,7 @@ input[type="file"] + label {
     overflow: hidden;
 }
 
-.item img {
+.item__img {
     height: 200px;
 }
 
@@ -217,6 +254,7 @@ input[type="file"] + label {
     padding: 0 40px;
     cursor: pointer;
     font-weight: 700;
+    background-color: white;
 
     transition: .3s ease transform,
                     .3s ease box-shadow,
