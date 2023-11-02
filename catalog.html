@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,11 +25,11 @@
 
         <!-- CSS -->
         <link rel="stylesheet" href="assets/css/header.css">
-        <link rel="stylesheet" href="assets/css/brands/brands.css">
+        <link rel="stylesheet" href="assets/css/catalog/catalog.css">
         <link rel="stylesheet" href="assets/css/footer.css">
 
-        <title>Бренды</title>
-</head>
+        <title>Каталог</title>
+    </head>
 
 <body>
     <header id="header">
@@ -85,47 +86,28 @@
     </header>
 
     <main>
-        <h2 class="main-title">Популярные бренды:</h2>
-        <div class="brands-items">
-            <div class="item">
-                <img src="./assets/img/brands/brand-whey.png" alt="">
-                <div class="item-description">
-                    <h2>WHEY</h2>
-                    <p>Бренд такой-то такой-то. Крутой поэтому и поэтому. Покупайте их товар!</p>
-                    <a href="/brand-page.html"><button class="item__button">Страница бренда</button></a>
-                </div>
-            </div>
-            <div class="item">
-                <img src="./assets/img/brands/brand-biotech.png" alt="">
-                <div class="item-description">
-                    <h2>BioTech</h2>
-                    <p>Бренд такой-то такой-то. Крутой поэтому и поэтому. Покупайте их товар!</p>
-                    <a href="/brand-page.html"><button class="item__button">Страница бренда</button></a>
-                </div>
-            </div>
+        <i class="fas fa-filter"></i>
+        <div class="filters-container">
+            <i class="fas fa-times"></i>
         </div>
-        <h2 class="main-title">Проверенные временем:</h2>
-        <div class="brands-items">
-            <div class="item">
-                <img src="./assets/img/brands/brand-mutant.png" alt="">
-                <div class="item-description">
-                    <h2>MUTANT</h2>
-                    <p>Бренд такой-то такой-то. Крутой поэтому и поэтому. Покупайте их товар!</p>
-                    <a href="/brand-page.html"><button class="item__button">Страница бренда</button></a>
+
+        <div class="catalog-items">
+            <div class="catalog-item">
+                <img src="assets/img/catalog/geiner.png" alt="">
+                <div class="catalog-item-info">
+                    <p>Гейнер<br>MUTANT</p>
+                    <p><span>1300</span>₽</p>
                 </div>
-            </div>
-            <div class="item">
-                <img src="./assets/img/brands/brand-fitness-heroes.png" alt="">
-                <div class="item-description">
-                    <h2>Fitness Heroes</h2>
-                    <p>Бренд такой-то такой-то. Крутой поэтому и поэтому. Покупайте их товар!</p>
-                    <a href="/brand-page.html"><button class="item__button">Страница бренда</button></a>
-                </div>
+                <form class="hover-items">
+                    <div class="add-to-cart__button"><a href="">В корзину</a></div>
+                    <div class="view__button"><a href="">Просмотр</a></div>
+                </form>
             </div>
         </div>
     </main>
 
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/catalog/filters.js"></script>
 </body>
 
 </html>

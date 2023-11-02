@@ -1,0 +1,122 @@
+main {
+    padding: 60px 80px;
+    position: relative;
+}
+
+.fa-filter {
+    position: absolute;
+    padding: 7px;
+    font-size: 24px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    left: 92%;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.filters-container {
+    padding: 20px;
+    box-sizing: border-box;
+    position: absolute;
+    width: 300px;
+    height: 100vh;
+    border-left: 2px solid black;
+    right: -304px;
+    top: 0;
+    background-color: #cfcfcf;
+
+    transition: .3s ease right;
+}
+
+.fa-times {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.catalog-items {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.catalog-item {
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+    width: 250px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.25);
+    padding: 25px 25px 0 25px;
+
+    transition: .3s ease padding,
+        .3s ease transform,
+        .3s ease background-color,
+        .3s ease box-shadow;
+}
+
+.catalog-item img {
+    height: 200px;
+}
+
+.catalog-item-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 700;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.hover-items {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    top: 100%;
+    transition: .3s ease top;
+}
+
+.hover-items a {
+    text-align: center;
+    display: block;
+    color: white;
+    box-sizing: border-box;
+    background-color: gray;
+    padding: 10px;
+    width: 125px;
+    font-size: 16px;
+    font-weight: 700;
+    transition: .3s ease background-color;
+}
+
+.hover-items a:hover {
+    background-color: black;
+}
+
+.catalog-item:hover .hover-items {
+    top: 87%;
+}
+
+.catalog-item:hover {
+    padding: 0 25px 0 25px;
+    transform: translateY(5px);
+    box-shadow: none;
+    background-color: transparent;
+}
+
+.add-to-cart__button a {
+    border-bottom-left-radius: 20px;
+    border-right: 1px solid white;
+}
+
+.view__button a {
+    border-bottom-right-radius: 20px;
+    border-left: 1px solid white;
+
+}
