@@ -89,6 +89,69 @@
         <i class="fas fa-filter"></i>
         <div class="filters-container">
             <i class="fas fa-times"></i>
+            <form class="filters">
+                <div class="price-range filters-item">
+                    <h3>Ценовой диапазон</h3>
+                    <div class="price-range-container filters-item-container">
+                        <input type="number" placeholder="0" min="0">
+                        <p>-</p>
+                        <input type="number">
+                    </div>
+                </div>
+                <div class="categories filters-item">
+                    <h3>Категории</h3>
+                    <div class="categories-container filters-item-container">
+                        <ul>
+                            <li>
+                                <input type="checkbox" name="" id="protein-mixtures">
+                                <label for="protein-mixtures">Белковые смеси</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="" id="protein">
+                                <label for="protein">Протеин</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="" id="amino-acids">
+                                <label for="amino-acids">Аминокислоты</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="manufacturer filters-item">
+                        <h3>Производитель</h3>
+                        <div class="manufacturer-container filters-item-container">
+                            <ul>
+                                <li>
+                                    <input type="checkbox" name="" id="manufacturer-mutant">
+                                    <label for="manufacturer-mutant">MUTANT</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="" id="whey">
+                                    <label for="whey">WHEY</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="" id="bio-tech">
+                                    <label for="bio-tech">BioTech</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sale filters-item">
+                        <h3>Скидка</h3>
+                        <div class="sale-container filters-item-container">
+                            <ul>
+                                <li>
+                                    <input type="radio" name="sale" id="yes">
+                                    <label for="yes">Да</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="sale" id="no">
+                                    <label for="no">Нет</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </form>
         </div>
 
         <div class="catalog-items">
@@ -100,13 +163,14 @@
                 </div>
                 <form class="hover-items">
                     <div class="add-to-cart__button"><a href="">В корзину</a></div>
-                    <div class="view__button"><a href="">Просмотр</a></div>
+                    <div class="view__button"><a href="/product.html">Просмотр</a></div>
                 </form>
             </div>
         </div>
     </main>
 
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/catalog/toggleFilters.js"></script>
     <script src="assets/js/catalog/filters.js"></script>
 </body>
 
