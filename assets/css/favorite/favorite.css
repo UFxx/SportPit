@@ -23,10 +23,12 @@ main {
     font-weight: 700;
     font-size: 20px;
     overflow: hidden;
+    background-color: white;
 
     transition: .3s ease padding,
                     .3s ease box-shadow,
-                    .3s ease transform;
+                    .3s ease transform,
+                    .3s ease background-color;
 }
 
 .item img {
@@ -47,6 +49,7 @@ main {
     padding: 0px 35px 0px 35px;
     box-shadow: none;
     transform: translateY(10px);
+    background-color: #E5E5E5;
 }
 
 .item__buy-button {
