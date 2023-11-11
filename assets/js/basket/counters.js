@@ -8,9 +8,12 @@ plusButton.forEach(element => {
     const getPrice = element.nextElementSibling.textContent.split(' ')[1].replace('₽', '') / 1;
     element.addEventListener('click', () => {
         element.previousElementSibling.value++;
+        if (element.previousElementSibling.value > 99) {
+            element.previousElementSibling.value = 99;
+        }
         element.nextElementSibling.children[0].textContent = getPrice * element.previousElementSibling.value;
     })
-});
+})
 
 minusButton.forEach(element => {
     const getItemTotalPrice = element.nextElementSibling.nextElementSibling.nextElementSibling;
@@ -27,9 +30,9 @@ minusButton.forEach(element => {
 counterInput.forEach(element => {
     const getPrice = element.nextElementSibling.nextElementSibling.textContent.split(' ')[1].replace('₽', '') / 1;
     element.addEventListener('input', () => {
-        if (element.value.length > 2) {
+        if (element.value > 99) {
             element.value = 99;
         };
-        element.nextElementSibling.nextElementSibling.children[0].textContent = getPrice * element.value/1;
+        element.nextElementSibling.nextElementSibling.children[0].textContent = getPrice * element.value / 1;
     })
 })

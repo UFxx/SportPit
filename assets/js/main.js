@@ -36,7 +36,7 @@ if (window.outerWidth <= 520) {
 }
 
 // Change logo icon & color
-const colors = ['#DFDF4A', '#008000', '#E92C03'];
+const colors = ['#000000', '#008000', '#E92C03'];
 const icons = ['fa-bicycle', 'fa-volleyball-ball', 'fa-dumbbell', 'fa-skiing'];
 
 const headerLogo = document.querySelector('.header-logo__text');
