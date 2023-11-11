@@ -1,95 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- Font Awesome 5 -->
-        <script src="https://kit.fontawesome.com/8a2fbc0c4d.js" crossorigin="anonymous"></script>
-    
-        <!-- Montserrat Alternates --> <!-- Thin 100/Regular 400/Bold 700/Medium 500 -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;400;500;700&display=swap" rel="stylesheet">
-    
-        <!-- Orbitron  --> <!-- Regular 400 --> 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
-    
-        <!-- CSS -->
-        <link rel="stylesheet" href="assets/css/header.css">
-        <link rel="stylesheet" href="assets/css/product/product.css">
-        <link rel="stylesheet" href="assets/css/footer.css">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- Favicon -->
-        <link rel="shortcut icon" href="./assets/img/favicon.svg" type="image/x-icon">
-    
-        <title>Продукт</title>
-    </head>
-    
-    <body>
-        <header id="header">
-            <div class="header-logo">
-                <p class="header-logo__text">SportPit <span id="header-logo__icon"><i class="fas fa-bicycle"></i></span></p>
-                <p class="header-logo__site-description">Интернет-магазин<br> спортивного питания</p>
-            </div>
-            <div class="header-menu">
-                <form action="" class="header-menu__search">
-                    <input type="text" name="" id="header-menu__search" placeholder="Поиск...">
-                </form>
-                <ul>
-                    <li class="header-menu__item"><a href="#">Войти</a></li>
-                    <li class="header-menu__item"><a href="/favorite.html">Избранное</a></li>
-                    <li class="header-menu__item"><a href="/brands.html">Бренды</a></li>
-                    <li class="header-menu__item"><a href="/catalog.html">Каталог</a></li>
-                    <li class="header-menu__item"><a href="/basket.html">Корзина</a></li>
-                    <li class="header-menu__item"><a href="">Поддержка</a></li>
-                </ul>
-            </div>
-            <div class="header-menu-mobile">
-                <ul>
-                    <li class="header-menu__item"><a href="#">Войти</a></li>
-                    <li class="header-menu__item"><a href="/favorite.html">Избранное</a></li>
-                    <li class="header-menu__item"><a href="/brands.html">Бренды</a></li>
-                    <li class="header-menu__item"><a href="/catalog.html">Каталог</a></li>
-                    <li class="header-menu__item"><a href="/basket.html">Корзина</a></li>
-                    <li class="header-menu__item"><a href="">Поддержка</a></li>
-                </ul>
-            </div>
-            <div class="header-menu-mobile__icon">
-                <div class="header-menu-mobile__icon-item"></div>
-                <div class="header-menu-mobile__icon-item"></div>
-                <div class="header-menu-mobile__icon-item"></div>
-            </div>
-    
-            <div class="login">
-                <i class="fas fa-times"></i>
-                <form action="">
-                    <h2>Вход</h2>
-                    <input type="text" name="" id="" placeholder="Ведите логин">
-                    <input type="password" name="" id="" placeholder="Введите пароль">
-                    <div class="login-form__checkbox">
-                        <input type="checkbox" name="" id="remember-me__checkbox">
-                        <label for="remember-me__checkbox">Запомнить меня</label>
-                    </div>
-                    <a href="#">Забыли пароль?</a>
-                    <a href="/brand-profile.html">Войти как бренд</a>
-                    <button>Войти</button>
-                </form>
-            </div>
-    
-            <a href="#header" class="scroll-to-top__button"><i class="fas fa-chevron-up"></i></a>
-        </header>
+    <!-- Font Awesome 5 -->
+    <script src="https://kit.fontawesome.com/8a2fbc0c4d.js" crossorigin="anonymous"></script>
+
+    <!-- Montserrat Alternates --> <!-- Thin 100/Regular 400/Bold 700/Medium 500 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Orbitron  --> <!-- Regular 400 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/product/product.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/img/favicon.svg" type="image/x-icon">
+
+    <title>Продукт</title>
+</head>
+
 <body>
-    
-    <div class="product">
-        <div class="product-slider">
-
+    <header id="header">
+        <div class="header-logo">
+            <p class="header-logo__text">SportPit <span id="header-logo__icon"><i class="fas fa-bicycle"></i></span></p>
+            <p class="header-logo__site-description">Интернет-магазин<br> спортивного питания</p>
         </div>
-    </div>
+        <div class="header-menu">
+            <form action="" class="header-menu__search">
+                <input type="text" name="" id="header-menu__search" placeholder="Поиск...">
+            </form>
+            <ul>
+                <li class="header-menu__item"><a href="#">Войти</a></li>
+                <li class="header-menu__item"><a href="/favorite.html">Избранное</a></li>
+                <li class="header-menu__item"><a href="/brands.html">Бренды</a></li>
+                <li class="header-menu__item"><a href="/catalog.html">Каталог</a></li>
+                <li class="header-menu__item"><a href="/basket.html">Корзина</a></li>
+                <li class="header-menu__item"><a href="">Поддержка</a></li>
+            </ul>
+        </div>
+        <div class="header-menu-mobile">
+            <ul>
+                <li class="header-menu__item"><a href="#">Войти</a></li>
+                <li class="header-menu__item"><a href="/favorite.html">Избранное</a></li>
+                <li class="header-menu__item"><a href="/brands.html">Бренды</a></li>
+                <li class="header-menu__item"><a href="/catalog.html">Каталог</a></li>
+                <li class="header-menu__item"><a href="/basket.html">Корзина</a></li>
+                <li class="header-menu__item"><a href="">Поддержка</a></li>
+            </ul>
+        </div>
+        <div class="header-menu-mobile__icon">
+            <div class="header-menu-mobile__icon-item"></div>
+            <div class="header-menu-mobile__icon-item"></div>
+            <div class="header-menu-mobile__icon-item"></div>
+        </div>
 
-    <script src="assets/js/main.js"></script>
-</body>
+        <div class="login">
+            <i class="fas fa-times"></i>
+            <form action="">
+                <h2>Вход</h2>
+                <input type="text" name="" id="" placeholder="Ведите логин">
+                <input type="password" name="" id="" placeholder="Введите пароль">
+                <div class="login-form__checkbox">
+                    <input type="checkbox" name="" id="remember-me__checkbox">
+                    <label for="remember-me__checkbox">Запомнить меня</label>
+                </div>
+                <a href="#">Забыли пароль?</a>
+                <a href="/brand-profile.html">Войти как бренд</a>
+                <button>Войти</button>
+            </form>
+        </div>
+
+        <a href="#header" class="scroll-to-top__button"><i class="fas fa-chevron-up"></i></a>
+    </header>
+
+    <body>
+
+        <main>
+
+            <div class="product">
+                <div class="product-photo">
+                    <img src="assets/img/product/product-photo1.png" alt="product photo">
+                </div>
+
+                <div class="product-slider">
+                    <i class="fas fa-chevron-down"></i>
+                   <div class="slider-container">
+                    <div class="product-slider-line">
+                        <div class="product-slider__item product-slider__item-active">
+                            <img src="assets/img/product/product-photo1.png" alt="">
+                        </div>
+                        <div class="product-slider__item">
+                            <img src="assets/img/product/product-photo2.webp" alt="">
+                        </div>
+                        <div class="product-slider__item">
+                            <img src="assets/img/product/product-photo3.webp" alt="">
+                        </div>
+                        <div class="product-slider__item">
+                            <img src="assets/img/product/product-photo4.webp" alt="">
+                        </div>
+                        <div class="product-slider__item">
+                            <img src="assets/img/product/product-photo5.webp" alt="">
+                        </div>
+                        <div class="product-slider__item">
+                            <img src="assets/img/product/product-photo4.webp" alt="">
+                        </div>
+                        <div class="product-slider__item">
+                            <img src="assets/img/product/product-photo4.webp" alt="">
+                        </div>
+                        <div class="product-slider__item">
+                            <img src="assets/img/product/product-photo4.webp" alt="">
+                        </div>
+                        <div class="product-slider__item">
+                            <img src="assets/img/product/product-photo4.webp" alt="">
+                        </div>
+                     
+                    </div>
+                   </div>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+
+                <div class="product-description">
+                    <h3>Geiner <br><span>MUTANT</span></h3>
+                    <p>Описание товара Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Proin eleifend felis sit amet nisi lacinia, non ultrices libero tristique.
+                        Aliquam elit risus, facilisis et varius vel, tristique ut mauris.
+                        Nam massa leo.</p>
+                </div>
+
+                <div class="choose-volume">
+                    <h3>Выберите объём:</h3>
+                    <form class="volume-variants">
+                        <button type="button">250г</button>
+                        <button type="button">500г</button>
+                        <button type="button">750г</button>
+                        <button type="button">1кг</button>
+                        <button>В корзину</button>
+                    </form>
+                </div>
+
+            </div>
+        </main>
+
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/product/selectVolume.js"></script>
+        <script src="assets/js/product/slider.js"></script>
+    </body>
+
 </html>
