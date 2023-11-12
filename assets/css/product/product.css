@@ -68,14 +68,15 @@ main {
     border-radius: 5px;
     display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
     cursor: pointer;
+    opacity: 50%;
 
     transition: .3s ease opacity;
 }
 
 .product-slider__item:hover {
-    opacity: 50%;
+    opacity: 100;
     border-radius: 1px solid rgba(0, 0, 0, 0.5);
 }
 
@@ -85,9 +86,11 @@ main {
 
 .product-slider__item-active {
     border: 1px solid rgba(0, 0, 0, 0.5);
+    opacity: 100%;
 }
 
-.product-description h3, .choose-volume h3 {
+.product-description h3,
+.choose-volume h3 {
     font-size: 32px;
 }
 
@@ -122,13 +125,11 @@ main {
     background-color: white;
     cursor: pointer;
 
-    transition: .3s ease backround-color,
-                        .3s ease transform;
+    transition: .3s ease background-color;
 }
 
 .volume-variants button:hover {
     background-color: rgba(0, 0, 0, 0.1);
-    transform: translateY(4px);
 }
 
 .volume-variants button:last-child {
@@ -144,4 +145,92 @@ main {
 .selected {
     border: 1px solid green !important;
     color: green !important;
+}
+
+.reviews-container,
+.leave-feedback {
+    margin-top: 50px;
+}
+
+.reviews-container h3,
+.leave-feedback h3 {
+    font-size: 32px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.reviews-item {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.leave-feedback__form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;;
+}
+
+.leave-feedback__form input, textarea {
+    padding: 5px 20px;
+    font-size: 20px;
+    background-color: #D9D9D9;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    font-weight: 500;
+
+    transition: .3s ease background-color;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.leave-feedback__form input {
+    width: 300px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom: none;
+}
+
+.leave-feedback__form textarea {
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    height: 140px;
+    width: 650px;
+    resize: none;
+}
+
+.leave-feedback__form input:hover, .leave-feedback__form textarea:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.leave-feedback__form input::placeholder, .leave-feedback__form textarea::placeholder {
+    transition: .3s ease transform;
+}
+
+.leave-feedback__form input:focus::placeholder, .leave-feedback__form textarea:focus::placeholder {
+    transform: translateY(-120%);
+}
+
+.leave-feedback__form button {
+    position: absolute;
+    top: 110%;
+    left: 520px;
+    font-size: 20px;
+    background-color: white;
+    color:  rgba(0, 0, 0, 0.5);
+    padding: 5px 20px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+    transition: .3s ease background-color;
+}
+
+.leave-feedback__form button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+
 }

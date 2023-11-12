@@ -18,6 +18,10 @@ body {
     /* overflow-x: hidden; */
 }
 
+button, input, textarea {
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
 body::-webkit-scrollbar {
     width: 4px;
 }
