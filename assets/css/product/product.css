@@ -163,11 +163,17 @@ main {
     margin-top: 20px;
 }
 
+.leave-feedback {
+    overflow: hidden;
+}
+
 .leave-feedback__form {
     position: relative;
     display: flex;
     flex-direction: column;
-    margin-top: 20px;;
+    margin-top: 20px;
+
+    transition: .3s ease transform;
 }
 
 .leave-feedback__form input, textarea {
@@ -189,14 +195,12 @@ input::-webkit-inner-spin-button {
 
 .leave-feedback__form input {
     width: 300px;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
+    border-radius: 5px 5px 0 0;
     border-bottom: none;
 }
 
 .leave-feedback__form textarea {
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
+    border-radius: 0px 5px 5px 5px;
     height: 140px;
     width: 650px;
     resize: none;
@@ -215,9 +219,9 @@ input::-webkit-inner-spin-button {
 }
 
 .leave-feedback__form button {
-    position: absolute;
-    top: 110%;
-    left: 520px;
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 495px;
     font-size: 20px;
     background-color: white;
     color:  rgba(0, 0, 0, 0.5);
@@ -233,4 +237,25 @@ input::-webkit-inner-spin-button {
 .leave-feedback__form button:hover {
     background-color: rgba(0, 0, 0, 0.1);
 
+}
+
+.leave-feedback {
+    position: relative;
+}
+
+.leave-feedback__completed {
+    position: absolute;
+    width: 700px;
+    height: 230px;
+    top: 59px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    border-radius: 100px;
+    opacity: 0;  
+    display: none;
+
+    transition: .3s ease opacity;
 }
