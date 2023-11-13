@@ -111,7 +111,7 @@ textarea {
 
 .problem-form input:focus::placeholder,
 .problem-form textarea:focus::placeholder {
-    transform: translateY(-110%)
+    transform: translateY(-120%)
 }
 
 .problem-form input:hover,
