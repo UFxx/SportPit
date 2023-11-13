@@ -21,12 +21,13 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/header.css">
-    <link rel="stylesheet" href="assets/css/favorite/favorite.css">
+    <link rel="stylesheet" href="assets/css/support/support.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="./assets/img/favicon.svg" type="image/x-icon">
 
-    <title>Избранное</title>
+    <title>Продукт</title>
 </head>
 
 <body>
@@ -84,40 +85,91 @@
     </header>
 
     <main>
-        <div class="items__container">
-            <div class="item">
-                <i class="fas fa-times"></i>
-                <img src="assets/img/index/geiner.png" alt="Гейнер MUTANT">
-                <div class="item-info">
-                    <p>Гейнер<br><span>MUTANT</span></p>
-                    <p><span>13</span>₽</p>
+        <h3>Прежде, чем задать вопрос - убедитесь, что его нет в списке ниже:</h3>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <p>Почему я нажимаю, а оно не работает?</p> <i class="fas fa-chevron-right"></i>
                 </div>
-                <button class="item__buy-button">В корзину</button>
+                <div class="faq-answer faq-answer__hidden">
+                    <p>Попробуйте нажимать сильнее, или нажимайте мышью</p>
+                </div>
             </div>
-            <div class="item">
-                <i class="fas fa-times"></i>
-                <img src="assets/img/index/proteine.png" alt="Протеин WHEY">
-                <div class="item-info">
-                    <p>Протеин<br><span>WHEY</span></p>
-                    <p><span>5000</span>₽</p>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <p>Не могу войти в профиль</p> <i class="fas fa-chevron-right"></i>
                 </div>
-                <button class="item__buy-button">В корзину</button>
+                <div class="faq-answer faq-answer__hidden">
+                    <p>Чтобы войти в профиль надо нажать кнопку “Войти” сверху, а потом ввести
+                        логин и пароль. Если у вас нет аккаунта, надо его создать нажав
+                        кнопку “Регистрация”</p>
+                </div>
             </div>
-            <div class="item">
-                <i class="fas fa-times"></i>
-                <img src="assets/img/index/creatine.png" alt="Креатин BioTech">
-                <div class="item-info">
-                    <p>Креатин<br><span>BioTech</span></p>
-                    <p><span>12000</span>₽</p>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <p>Что-то еще</p> <i class="fas fa-chevron-right"></i>
                 </div>
-                <button class="item__buy-button">В корзину</button>
+                <div class="faq-answer faq-answer__hidden">
+                    <p>Сами разбирайтесь, мы вообще хз</p>
+                </div>
             </div>
         </div>
+        <h3>Не нашли свою проблему? Напишите нам! Опишите её и мы дадим ответ!</h3>
+        <form class="problem-form">
+            <input type="text" placeholder="Тема (обязательно)">
+            <textarea placeholder="Опишите свою проблему" id="" cols="30" rows="10"></textarea>
+            <div class="problem-form-buttons">
+                <input type="file" name="" id="img-input">
+                <label for="img-input">Прикрепить изображение</label>
+                <button type="submit">Отправить</button>
+            </div>
+        </form>
     </main>
-
-    <script src="assets/js/favorite/addToCartButton.js"></script>
-    <script src="assets/js/favorite/deleteItem.js"></script>
+    
+    <footer>
+        <div class="footer-menu">
+            <div class="footer-menu__item">
+                <ul>
+                    <p>Контакты:</p>
+                    <li>8 (989) 182-14-27</li>
+                    <li>г.Йошкар-Ола<br>ул.Дзержинская 18</li>
+                    <li>info@sportpit.net</li>
+                </ul>
+            </div>
+            <div class="footer-menu__item">
+                <ul>
+                    <p>Компания:</p>
+                    <li><a href="">О компании</a></li>
+                    <li><a href="">Отзывы</a></li>
+                    <li><a href="">Сатьи</a></li>
+                    <li><a href="">Магазины</a></li>
+                </ul>
+            </div>
+            <div class="footer-menu__item">
+                <ul>
+                    <p>Покупателям:</p>
+                    <li><a href="">Доставка</a></li>
+                    <li><a href="">Оплата</a></li>
+                    <li><a href="">Обратная связь</a></li>
+                    <li><a href="">Возврат товара</a></li>
+                </ul>
+            </div>
+            <div class="footer-menu__item">
+                <ul>
+                    <p>Сотрудничество:</p>
+                    <li><a href="">Брендам</a></li>
+                    <li><a href="">Поставщикам</a></li>
+                    <li><a href="">Реклама</a></li>
+                </ul>
+            </div>
+        </div>
+        <p id="signature">Designed & Created by Brahma</p>
+    </footer>
+    
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/support/openQuestions.js"></script>
+    <script src="assets/js/support/attachFileName.js"></script>
+    <script src="assets/js/support/validateForm.js"></script>
 </body>
 
 </html>
