@@ -102,8 +102,14 @@
 
     <main>
         <div class="profile-info">
-            <img src="assets/img/profile/profile-photo.png" alt="profile-photo">
-            <p class="profile-name">Альберт Эйнштейн</p>
+            <div class="profile-info-container">
+                <img src="assets/img/profile/profile-photo.png" alt="profile-photo">
+                <p class="profile-name">Альберт Эйнштейн</p>
+                <div class="profile-info-input-file">
+                    <input type="file" name="" id="input-profile-photo">
+                    <label for="input-profile-photo"><i class="fas fa-edit"></i></label>
+                </div>
+            </div>
         </div>
         <div class="orders">
             <h3>Заказы</h3>
@@ -211,6 +217,7 @@
     </footer>
 
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/profile/changeProfilePhoto.js"></script>
 </body>
 
 </html>

@@ -1,5 +1,5 @@
 main {
-     padding: 25px 40px;
+    padding: 25px 40px;
 }
 
 .profile-info {
@@ -17,6 +17,36 @@ main {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
+#input-profile-photo+label {
+    position: absolute;
+    top: 76px;
+    margin-left: 2px;
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    background-color: black;
+    opacity: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+#input-profile-photo {
+    opacity: 0;
+    z-index: -1;
+}
+
+.profile-info-input-file {
+    opacity: 0;
+}
+
+.profile-info-container:hover .profile-info-input-file {
+    opacity: 100;
+}
+
 .profile-name {
     font-weight: 500;
     font-size: 24px;
@@ -27,7 +57,8 @@ main {
     margin-top: 40px;
 }
 
-.orders h3, .settings h3 {
+.orders h3,
+.settings h3 {
     font-size: 28px;
     color: rgba(0, 0, 0, 0.5);
 }
@@ -62,7 +93,7 @@ main {
 
 .settings div ul li {
     list-style: none;
-} 
+}
 
 .settings input {
     font-size: 18px;
@@ -76,8 +107,8 @@ main {
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
 
     transition: .3s ease box-shadow,
-                    .3s ease background-color,
-                    .3s ease transform;
+        .3s ease background-color,
+        .3s ease transform;
 }
 
 .settings input:hover {
