@@ -87,3 +87,24 @@ window.addEventListener('scroll', () => {
         scrollToTopButton.classList.remove('scroll-to-top__button-active');
     }
 })
+
+// REGISTER
+const openRegisterButton = document.querySelector('.register-button');
+const registerForm = document.querySelector('.register-form');
+openRegisterButton.addEventListener('click', () => {
+    registerForm.classList.add('register-form__open');
+    login.children[1].style.opacity = 0;
+    setTimeout(() => {
+        login.children[1].style.display = 'none';
+    },300);
+})
+
+const closeRegisterForm = document.querySelector('.register-form i');
+closeRegisterForm.addEventListener('click', () => {
+    registerForm.classList.remove('register-form__open');
+
+    login.children[1].style.display = 'flex';
+    setTimeout(() => {
+        login.children[1].style.opacity = 100;
+    },300);
+})

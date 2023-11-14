@@ -76,9 +76,9 @@ main h3 {
 }
 
 .problem-form input,
-textarea,
-button,
-label {
+.problem-form textarea,
+.problem-form button,
+.problem-form label {
     padding: 5px 20px;
     font-size: 20px;
     border: 2px solid rgba(0, 0, 0, 0.50);
@@ -99,7 +99,7 @@ label {
 }
 
 .problem-form input,
-textarea {
+.problem-form textarea {
     transition: .3s ease box-shadow,
         .3s ease background-color;
 }
@@ -125,7 +125,7 @@ textarea {
 }
 
 .problem-form-buttons button,
-label {
+.problem-form label {
     border-radius: 5px;
     cursor: pointer;
     transition: .3s ease background-color,
