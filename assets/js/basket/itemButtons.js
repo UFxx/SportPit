@@ -13,7 +13,7 @@ function buttonClick(button) {
             element.addEventListener('click', () => {
                 element.closest('.item').style.transform = 'scale(0.001)';
                 setTimeout(() => {
-                    element.closest('.item').style.display = 'none';
+                    element.closest('.item').remove();
                 }, 400);
             })
         }
