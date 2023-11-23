@@ -34,11 +34,17 @@ input {
     height: 300px;
 }
 
-.brand-avatar button {
+.brand-avatar input {
     position: absolute;
-    top: 300px;
-    left: 0;
-    width: 100%;
+    left: 250px;
+    font-size: 22px;
+}
+
+.brand-avatar input::-webkit-file-upload-button {
+    display: none;
+}
+
+.brand-avatar input + label {
     border-radius: 5px;
     border: 1px solid black;
     outline: none;
@@ -54,7 +60,7 @@ input {
         .3s ease box-shadow;
 }
 
-.brand-avatar button:hover {
+.brand-avatar input + label:hover {
     color: black;
     background-color: rgba(0, 0, 0, 0.1);
     box-shadow: none;
@@ -114,6 +120,12 @@ input {
     transform: translateY(5px);
     box-shadow: none;
     background-color: rgba(0, 0, 0, 0.1);
+}
+
+.add-product__form {
+    height: 0;
+    overflow: hidden;
+    transition: .3s ease-in-out height;
 }
 
 .product-general-info {

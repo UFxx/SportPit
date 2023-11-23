@@ -4,6 +4,10 @@ const itemsContainer = document.querySelector('.items__container');
 const brandName = document.querySelector('.brand-info h1');
 const productNameInput = document.querySelector('.product-general-info__name');
 const productPriceInput = document.querySelector('.product-general-info__price');
+const fileInput = document.querySelector('input[type="file"]');
+const fileInputButtonText = document.querySelector('#file-input__label');
+
+
 
 // Clear inputs fields
 function clearFields() {
@@ -26,8 +30,13 @@ window.addEventListener('load', () => {
     }
 })
 
+const addProductForm = document.querySelector('.add-product__form');
+
 addProductButton.addEventListener('click', () => {
-    zeroElementsItemsContainer.style.display = 'none';
+    zeroElementsItemsContainer.remove();
+    itemsContainer.children.length > 0 ? addProductButton.setAttribute('disabled', '') : addProductButton.removeAttribute('disabled', '');
+
+    addProductForm.style.height = '320px';
 
     // Add item
     const item = document.createElement('div');
@@ -43,23 +52,37 @@ addProductButton.addEventListener('click', () => {
     const itemName = document.createElement('p');
     const itemPrice = document.createElement('p');
     itemInfoContainer.appendChild(itemName);
-    itemName.innerHTML = productNameInput.value + `<br\>${brandName.textContent}`;
+    itemName.innerHTML = 'Введите имя' + `<br\>${brandName.textContent}`;
     itemInfoContainer.appendChild(itemPrice);
-    itemPrice.textContent = productPriceInput.value + '₽';
+    itemPrice.textContent = 'Введите цену';
 
-    // Add img (needs some work)
-    const fileInput = document.querySelector('input[type="file"]');
-    const fileInputButtonText = document.querySelector('#file-input__label');
-    const productPreviewImage = document.querySelector('.product-preview .item img');
-    const fileReader = new FileReader();
-    fileInputButtonText.textContent = fileInput.files[0].name;
-    fileReader.onload = function () {
-        productPreviewImage.setAttribute('src', fileReader.result);
+
+    function inputsEvents(input) {
+        if (input == productNameInput) {
+            input.addEventListener('input', () => {
+                itemName.innerHTML = input.value + `<br\>${brandName.textContent}`;
+            })
+        } else if (input == productPriceInput) {
+            input.addEventListener('input', () => {
+                itemPrice.innerHTML = input.value + '₽';
+            })
+        } else if (input == fileInput) {
+            input.addEventListener('change', () => {
+                const productPreviewImage = document.querySelector('.product-preview .item img');
+                const fileReader = new FileReader();
+                fileInputButtonText.textContent = input.files[0].name;
+                fileReader.onload = function () {
+                    console.log(productPreviewImage);
+                    productPreviewImage.setAttribute('src', fileReader.result)
+                }
+                const file = input.files[0];
+                fileReader.readAsDataURL(file);
+            });
+        }
     }
-    const file = fileInput.files[0];
-    fileReader.readAsDataURL(file);
-
-    clearFields();
+    inputsEvents(productNameInput);
+    inputsEvents(productPriceInput);
+    inputsEvents(fileInput);
 });
 
 clearFieldsButton.addEventListener('click', () => {
