@@ -219,7 +219,7 @@ input {
     font-size: 24px;
 }
 
-.items__container {
+.items__container, .saved-items__container {
     margin-top: 25px;
     display: flex;
     flex-wrap: wrap;
@@ -420,4 +420,18 @@ input {
 
 #save:hover {
     background-color: rgba(0, 0, 0, 0.1);
+}
+
+.saved-item-delete-icon {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    transition: .3s ease transform, .3s ease black;
+    font-size: 24px;
+}
+
+.saved-item-delete-icon:hover {
+    transform: rotate(90deg);
+    color: rgba(0, 0, 0, 0.5);
 }

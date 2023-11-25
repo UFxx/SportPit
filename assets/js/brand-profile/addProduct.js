@@ -6,17 +6,7 @@ const productPriceInput = document.querySelector('.product-general-info__price')
 const fileInput = document.querySelector('#file-input');
 const fileInputButtonText = document.querySelector('#file-input__label');
 
-
-
-// Clear inputs fields
-function clearFields() {
-    productNameInput.value = '';
-    productPriceInput.value = '';
-    fileInputButtonText.textContent = 'Фото не выбрано';
-    fileInput.value = '';
-}
-
-// 
+// Placeholder, no products yet
 const zeroElementsItemsContainer = document.createElement('p');
 window.addEventListener('load', () => {
     if (itemsContainer.firstElementChild === null) {
@@ -82,4 +72,19 @@ addProductButton.addEventListener('click', () => {
     inputsEvents(productNameInput);
     inputsEvents(productPriceInput);
     inputsEvents(fileInput);
+
+    const saveProductButton = document.querySelector('#save-product-button');
+    const savedItemsContainer = document.querySelector('.saved-items__container');
+
+    saveProductButton.addEventListener('click', () => {
+        savedItemsContainer.appendChild(item);
+        const deleteIcon = document.createElement('i');
+        deleteIcon.classList.add('fas', 'fa-times', 'saved-item-delete-icon');
+        item.appendChild(deleteIcon);
+
+        deleteIcon.addEventListener('click', () => {
+            deleteIcon.parentElement.remove();
+            deleteIcon.parentElement.style.display = 'none';
+        })
+    })
 });
