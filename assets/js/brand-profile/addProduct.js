@@ -1,10 +1,9 @@
 const addProductButton = document.querySelector('#add-product');
-const clearFieldsButton = document.querySelector('#clear-fields');
 const itemsContainer = document.querySelector('.items__container');
 const brandName = document.querySelector('.brand-info h1');
 const productNameInput = document.querySelector('.product-general-info__name');
 const productPriceInput = document.querySelector('.product-general-info__price');
-const fileInput = document.querySelector('input[type="file"]');
+const fileInput = document.querySelector('#file-input');
 const fileInputButtonText = document.querySelector('#file-input__label');
 
 
@@ -84,7 +83,3 @@ addProductButton.addEventListener('click', () => {
     inputsEvents(productPriceInput);
     inputsEvents(fileInput);
 });
-
-clearFieldsButton.addEventListener('click', () => {
-    clearFields();
-})
