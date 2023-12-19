@@ -24,6 +24,10 @@ textarea {
     font-family: 'Montserrat Alternates', sans-serif;
 }
 
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+
 body::-webkit-scrollbar {
     width: 4px;
 }
@@ -75,7 +79,7 @@ header {
     width: 200px;
     height: 20px;
     margin-right: 70px;
-    padding-left: 10px;
+    padding-left: 20px;
     font-family: 'Montserrat Alternates', sans-serif;
     background: none;
     outline: none;

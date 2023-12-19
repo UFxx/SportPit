@@ -29,3 +29,44 @@ footer {
     font-weight: 100;
     text-align: center;
 }
+
+@media (max-width: 1000px) {
+    footer {
+        padding: 40px;
+    }
+}
+
+@media (max-width: 811px) {
+    footer {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 790px) {
+    .footer-menu {
+        column-gap: 30px;
+    }
+}
+
+@media (max-width: 670px) {
+    .footer-menu__item ul li {
+        font-size: 14px;
+    }
+
+    .footer-menu__item ul p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 605px) {
+    footer {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 585px) {
+    .footer-menu {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+}
