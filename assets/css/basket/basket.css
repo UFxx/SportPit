@@ -19,6 +19,7 @@ main {
     padding: 25px 30px;
     box-sizing: border-box;
     box-shadow: none;
+    z-index: -1;
 
     transition: .3s ease box-shadow,
                     .3s ease transform;
@@ -104,10 +105,9 @@ input::-webkit-inner-spin-button {
     display: flex;
     column-gap: 10px;
     align-items: center;
-
-    position: absolute;
-    top: 90%;
-    left: 77%;
+    width: 100%;
+    justify-content: center;
+    padding: 20px 0;
 }
 
 .order-everything p, button {
