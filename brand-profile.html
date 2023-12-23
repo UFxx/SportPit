@@ -22,6 +22,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/brand-profile/brand-profile.css">
+    <link rel="stylesheet" href="assets/css/brand-profile/media-query-brand-profile.css">
     <link rel="stylesheet" href="assets/css/footer.css">
 
     <!-- Favicon -->
@@ -144,16 +145,19 @@
 
             <i class="fas fa-cogs"></i>
 
-
         </div>
         <div class="add-product">
             <h3>Добавить товар:</h3>
             <form class="add-product__form" action="">
                 <div class="product-general-info">
-                    <input class="product-general-info__name" type="text" placeholder="Название товара">
-                    <input class="product-general-info__price" type="text" placeholder="Цена">
-                    <input type="file" id="file-input" />
-                    <label for="file-input" id="file-input__label">Фото не выбрано</label>
+                    <div>
+                        <input class="product-general-info__name" type="text" placeholder="Название товара">
+                        <input class="product-general-info__price" type="text" placeholder="Цена">
+                    </div>
+                    <div>
+                        <input type="file" id="file-input" />
+                        <label for="file-input" id="file-input__label">Фото не выбрано</label>
+                    </div>
                 </div>
                 <textarea name="" id="" cols="30" rows="10" placeholder="Описание товара"></textarea>
             </form>
