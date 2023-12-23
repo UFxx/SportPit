@@ -24,6 +24,7 @@ main {
     font-size: 20px;
     overflow: hidden;
     background-color: white;
+    z-index: -1;
 
     transition: .3s ease padding,
                     .3s ease box-shadow,
