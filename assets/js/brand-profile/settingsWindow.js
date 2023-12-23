@@ -9,6 +9,7 @@ body.style.overflowY = 'hidden';
 setTimeout(() => {
     modalWindowBackground.style.opacity = 100;
     modalWindow.style.transform = 'scale(1)';
+    window.scrollTo({top: 0,  behavior: 'smooth'});
 },300)
 })
 
