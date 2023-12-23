@@ -1,0 +1,68 @@
+@media (max-width: 1440px) {
+    main {
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 700px) {
+    main {
+        padding: 40px;
+    }
+
+    
+}
+
+@media (max-width: 678px) {
+    .catalog-categorie h3 {
+        white-space: nowrap;
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 612px) {
+    main {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 570px) {
+    main {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 556px) {
+    .catalog-item {
+        margin: 0 auto;
+        padding: 15px 15px 0 15px;
+        width: 200px;
+        height: 270px;
+    }
+
+    .catalog-item p {
+        font-size: 16px;
+    }
+
+    .hover-items a {
+        font-size: 14px;
+        width: 100px;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 546px) {
+    .fa-filter {
+        left: 85%;
+    }
+}
+
+@media (max-width: 455px) {
+    .catalog-categorie {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .scroll-to-top__button {
+        left: 80%;
+    }
+}

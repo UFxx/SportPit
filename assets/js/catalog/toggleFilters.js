@@ -6,8 +6,14 @@ const main = document.querySelector('main');
 
 function toggleFiltersContainer (button) {
     button.addEventListener('click', () => {
+
+        
         filtersContainer.classList.toggle('filters-container-open');
-        main.classList.toggle('main-filters-open')
+        if (window.innerWidth < 701) {
+            return
+        } else {
+            main.classList.toggle('main-filters-open')
+        }
     });
 }
 toggleFiltersContainer(filtersIcon);
