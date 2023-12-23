@@ -1,0 +1,15 @@
+@media (max-width: 676px) {
+    main {
+        padding: 20px;
+    }
+
+    .items__container {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 544px) {
+    .scroll-to-top__button {
+        display: none;
+    }
+}
