@@ -59,6 +59,13 @@
     }
 }
 
+@media (max-width: 726px) {
+    .leave-feedback__completed {
+        width: auto;
+        padding: 0 30px;
+    }
+}
+
 @media (max-width: 714px) {
     .leave-feedback__form textarea {
         width: 500px;
@@ -183,6 +190,15 @@
 
     .reviews-container {
         margin-top: 470px;
+    }
+}
+
+@media (max-width: 356px) {
+    .leave-feedback__completed {
+        white-space: nowrap;
+        font-size: 16px;
+        height: 200px;
+        margin-top: 30px;
     }
 }
 
