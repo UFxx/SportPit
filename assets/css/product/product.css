@@ -14,7 +14,7 @@ main {
 
 .product-photo img {
     position: absolute;
-    width: 100%;
+    width: 300px;
     height: 100%;
 }
 
@@ -258,4 +258,8 @@ input::-webkit-inner-spin-button {
     display: none;
 
     transition: .3s ease opacity;
+}
+
+.scroll-to-top__button {
+    display: none;
 }
