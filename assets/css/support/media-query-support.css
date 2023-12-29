@@ -1,0 +1,92 @@
+@media (max-width: 958px) {
+
+    .faq-question,
+    .faq-answer,
+    .problem-form {
+        width: 700px;
+    }
+
+    main h3 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 878px) {
+    main h3 {
+        word-wrap: wrap;
+        text-align: center;
+    }
+}
+
+@media (max-width: 764px) {
+
+    .faq-question,
+    .faq-answer,
+    .problem-form {
+        font-size: 18px;
+        width: 600px;
+    }
+
+    .problem-form textarea::placeholder,
+    .problem-form input::placeholder {
+        font-size: 18px;
+    }
+
+    .problem-form textarea,
+    .problem-form input {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 680px) {
+    .faq-question,
+    .faq-answer,
+    .problem-form {
+        width: 450px;
+    }
+
+    .problem-form-buttons button {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 520px) {
+    .faq-question,
+    .faq-answer,
+    .problem-form {
+        width: 350px;
+        font-size: 16px;
+    }
+
+    main h3 {
+        font-size: 18px;
+    }
+
+    .scroll-to-top__button {
+        left: 80%;
+    }
+
+    #img-input {
+        width: 300px;
+    }
+
+    .problem-form-buttons button, .problem-form-buttons input + label {
+        font-size: 18px;
+    }    
+}
+
+@media (max-width: 414px) {
+    .faq-question,
+    .faq-answer,
+    .problem-form {
+        width: 250px;
+    }
+
+    #img-input + label {
+        font-size: 14px;
+    }
+
+    #img-input {
+        width: 200px;
+    }
+}
