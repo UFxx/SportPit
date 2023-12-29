@@ -1,0 +1,53 @@
+@media (max-width: 1385px) {
+    #input-profile-photo + label {
+        top: 106px;
+    }
+}
+
+@media (max-width: 1231px) {
+    .settings input {
+        font-size: 16px;
+        width: 300px;
+    }
+}
+
+@media (max-width: 1073px) {
+    .settings input {
+        width: 260px;
+    }
+}
+
+@media (max-width: 971px) {
+    .settings form {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 745px) {
+    #input-profile-photo + label {
+        top: 128px;
+    }
+}
+
+@media (max-width: 421px) {
+    main {
+        padding: 20px;
+    }
+
+    .orders h3 {
+        font-size: 22px;
+    }
+
+    .orders-item {
+        font-size: 16px;
+    }
+
+    .scroll-to-top__button {
+        left: 85%;
+    }
+
+    #input-profile-photo + label {
+        top: 123.5px;
+    }
+
+}
